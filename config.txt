@@ -1,0 +1,50 @@
+-----------------------------------------------
+#démarage
+-----------------------------------------------
+
+npm init
+npm i express dotenv mongoose nodemon
+npm run server ("dev": "nodemon server.js")
+
+-----------------------------------------------
+#gitflow
+-----------------------------------------------
+
+git init
+git flow init
+
+Nom de la branche pour les versions de production : [master] 
+Nom de la branche pour le développement de la "prochaine version" : [develop] 
+
+Comment nommer les préfixes de vos branches de support ?
+
+Branches de fonctionnalités ? [feature/] 
+git flow feature start feature_branch
+git flow feature finish feature_branch
+
+Branches de correction de bugs ? [bugfix/] 
+
+Branches de version ? [release/] 
+git flow release start 0.1.0
+git flow release finish '0.1.0' (flux de publication)
+
+Branches de correction ? [hotfix/] 
+git flow hotfix start hotfix_branch
+git flow hotfix finish hotfix_branch
+
+Branches de support ? [support/] 
+Préfixe de l'étiquette de version ? [] 
+Répertoire des hooks et des filtres ? [C:/wamp64/www/cours-api/entrainement-api-gitflow/.git/hooks]"
+
+------------------------------------------
+#ajouter des fichier à la branhce master
+------------------------------------------
+
+git checkout
+git add .gitignore README.md
+git commit -m "add file"
+git push origin master
+
+------------------------------------------
+#fin
+------------------------------------------
