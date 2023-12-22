@@ -1,5 +1,5 @@
 -----------------------------------------------
-#démarage
+#démarage : http://localhost:3000/
 -----------------------------------------------
 
 npm init
@@ -20,6 +20,7 @@ Comment nommer les préfixes de vos branches de support ?
 
 Branches de fonctionnalités ? [feature/] 
 git flow feature start feature_branch
+git status pour voir les fichiers modifiés qui ne sont pas encore validés.
 git flow feature finish feature_branch
 
 Branches de correction de bugs ? [bugfix/] 
@@ -37,11 +38,24 @@ Préfixe de l'étiquette de version ? []
 Répertoire des hooks et des filtres ? [C:/wamp64/www/cours-api/entrainement-api-gitflow/.git/hooks]"
 
 ------------------------------------------
-#ajouter des fichier à la branhce master
+#ajouter des fichier à la branche master
 ------------------------------------------
 
 git checkout
 git add .gitignore README.md
+git commit -m "add file"
+git push origin master
+
+------------------------------------------
+#fin
+------------------------------------------
+
+------------------------------------------
+#ajouter des fichier à la branche develop
+------------------------------------------
+
+git checkout
+git add . (ne pas ajouter le dossier node_module)
 git commit -m "add file"
 git push origin master
 
