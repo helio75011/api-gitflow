@@ -21,7 +21,9 @@ Comment nommer les préfixes de vos branches de support ?
 Branches de fonctionnalités ? [feature/] 
 git flow feature start feature_branch
 git status pour voir les fichiers modifiés qui ne sont pas encore validés.
-git flow feature finish feature_branch
+git add .
+git commit -m "Votre message de commit"
+git flow feature finish feature_branch Si vous souhaitez conserver ces modifications, vous devrez les valider
 
 Branches de correction de bugs ? [bugfix/] 
 
